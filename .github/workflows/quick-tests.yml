@@ -1,5 +1,7 @@
 name: quick-tests
 
+on: [push]
+
 jobs:
   min-dep-py3:  # min dependencies installed tests for different python
     runs-on: ubuntu-latest
