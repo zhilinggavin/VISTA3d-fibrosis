@@ -1,17 +1,4 @@
-name: premerge-min
-
-on:
-  # quick tests for pull requests and the releasing branches
-  push:
-    branches:
-      - vista3d
-      - main
-  pull_request:
-
-concurrency:
-  # automatically cancel the previously triggered workflows when there's a newer version
-  group: py-min-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
+name: quick-tests
 
 jobs:
   min-dep-py3:  # min dependencies installed tests for different python
