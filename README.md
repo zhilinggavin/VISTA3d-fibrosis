@@ -19,6 +19,12 @@ The project uses the following Conda environment:
 ## Challenge Project Schedule
 ![Project Schedule](challenge/Schedule.png)
 
+## Model Input & Output
+### Input files as .nii.gz
+- Example Image shape: `(512, 512, 424)`, Data type: `Min: -1024.0; Max: 1444.0`
+### Saving segmentation files .nii.gz
+- Example File name: `xxx_seg.nii.gz`, Image shape: `(512, 512, 424)`, Data type: `float64; Min: 0.0; Max: 1.0`
+
 ---
 
 ## Monai Functions Explaination
