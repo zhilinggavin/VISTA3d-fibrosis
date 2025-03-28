@@ -48,10 +48,10 @@ from tqdm import tqdm
 
 from vista3d import vista_model_registry
 
-from .sliding_window import sliding_window_inference
-from .utils.sample_utils import Point_sampler
-from .utils.trans_utils import DatasetSelectTansformd, RelabelD
-from .utils.workflow_utils import (
+from sliding_window import sliding_window_inference
+from utils.sample_utils import Point_sampler
+from utils.trans_utils import DatasetSelectTansformd, RelabelD
+from utils.workflow_utils import (
     MERGE_LIST,
     USE_SV_GT_LIST,
     generate_prompt_pairs,
