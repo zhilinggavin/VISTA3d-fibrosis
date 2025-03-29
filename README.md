@@ -24,6 +24,10 @@ The project uses the following Conda environment:
 - Example Image shape: `(512, 512, 424)`, Data type: `Min: -1024.0; Max: 1444.0`
 ### Saving segmentation files .nii.gz
 - Example File name: `xxx_seg.nii.gz`, Image shape: `(512, 512, 424)`, Data type: `float64; Min: 0.0; Max: 1.0`
+### Preprocessing
+- Lung Window selction [-1024, -200]  
+  Reference [Quantitative CT analysis of idiopathic pulmonary fibrosis and correlation with lung function study](https://bmcpulmmed.biomedcentral.com/articles/10.1186/s12890-024-03254-9) 
+  ![example](33_example.png)
 
 ---
 
@@ -43,4 +47,8 @@ The `infer_transforms` pipeline ensures consistent preprocessing for high-resolu
   4. **`Orientationd`**: Reorients the image to a standard anatomical orientation (e.g., `RAS`).
   5. **`Spacingd`**: Resamples the image to uniform voxel spacing (e.g., `[1.0, 1.0, 1.0]` mm).
   6. **`CastToTyped`**: Casts the image to a specific data type (e.g., `float32`).
+
+  - Lung Window selction [-1024, -200]  
+    Reference [Quantitative CT analysis of idiopathic pulmonary fibrosis and correlation with lung function study](https://bmcpulmmed.biomedcentral.com/articles/10.1186/s12890-024-03254-9) 
+
 
